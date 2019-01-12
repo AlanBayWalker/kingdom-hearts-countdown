@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './LeftVerticalMenu.scss';
 
-export default class LeftVerticalMenu extends Component {
-  render () {
-    return (
-      <nav className="left-vertical-menu">
-        <ul>
-          <li>
-            <Link to="/">
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              Github
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    );
-  }
-}
+const leftVerticalMenu = () => (
+  <nav className="left-vertical-menu">
+    <ul>
+      <li>
+        <a href="http://abwtechnologies.com" target="_blank" rel="noopener noreferrer">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/AlanBayWalker" target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+      </li>
+    </ul>
+  </nav>
+);
+
+export default leftVerticalMenu;

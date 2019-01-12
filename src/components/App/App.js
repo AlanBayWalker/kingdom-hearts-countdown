@@ -40,7 +40,7 @@ const particleParams = {
         enable: false,
         speed: 80,
         size_min: 0.1,
-        sync: false
+        sync: true
       }
     },
     move: {
@@ -53,10 +53,17 @@ const particleParams = {
     }
   },
   interactivity: {
+    detect_on: 'canvas',
     events: {
+      resize: true,
       onclick: {
         enable: true,
         mode: 'remove'
+      },
+      onresize: {
+        enable: true,
+        density_auto: true,
+        density_area: 1000
       }
     },
     modes: {

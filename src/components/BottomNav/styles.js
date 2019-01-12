@@ -59,7 +59,7 @@ export const SideNote = styled.div`
 export const ColorBlock = styled.span`
   animation-name: ${colorBlock};
   animation-duration: 1s;
-  animation-delay: 4.4s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
   display: inline-block;
   background-color: #ef9700;
@@ -71,7 +71,7 @@ export const ColorBlock = styled.span`
 export const ColorBlockText = styled.span`
   animation-name: ${colorBlockText};
   animation-duration: 1s;
-  animation-delay: 4.8s;
+  animation-delay: 5.6s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   opacity: 0;
@@ -89,8 +89,8 @@ export const SideNoteHighlight = styled.span`
 
 export const GameWrapper = styled.div`
   animation-name: ${navGameScanner};
-  animation-duration: 1.5s;
-  animation-delay: 6s;
+  animation-duration: 1s;
+  animation-delay: 6.4s;
   animation-fill-mode: forwards;
   right: -20rem;
   margin-left: auto;
@@ -109,7 +109,7 @@ export const GameIMG = styled.div`
 export const GameScan = styled.div`
   animation-name: ${imageScan};
   animation-duration: 6s;
-  animation-delay: 5.5s;
+  animation-delay: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   background: rgba(255, 255, 255, .3) no-repeat center center;
