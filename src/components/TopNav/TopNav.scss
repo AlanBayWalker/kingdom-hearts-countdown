@@ -69,10 +69,12 @@
 
 .top-nav {
   font-size: 1.1rem;
-  padding: 3rem;
+  padding: 3rem 0;
   position: absolute;
   text-align: center;
-  width: 94vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 95%;
   z-index: 2;
 
   a {
@@ -96,8 +98,9 @@
 }
 
 .top-nav-date {
-  font-family: 'Iceland', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 2rem;
+  margin-top: -.4rem;
   text-align: left;
 }
 
@@ -149,7 +152,7 @@
   &::before {
     border: 2px solid transparent; // We're animating border-color again
     animation-name: spinBefore;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-duration: .8s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
@@ -157,7 +160,7 @@
 
   &::after {
     animation-name: spinAfter;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-duration: .7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
@@ -217,7 +220,7 @@
     // background-color: #fff;
     animation-name: spinnerBackground;
     animation-duration: 1.2s;
-    animation-delay: 2.8s;
+    animation-delay: 4.8s;
     // animation-timing-function: ;
     animation-fill-mode: forwards;
 
@@ -257,7 +260,7 @@
 
 .fadeup {
   animation-name: fadeup;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;

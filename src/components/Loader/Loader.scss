@@ -1,0 +1,23 @@
+@keyframes loader {
+  15% {
+    background-color: rgba(0,0,0,1);
+  }
+
+  to {
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+.loader {
+  animation-name: loader;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  background-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  z-index: 3;
+}

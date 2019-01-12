@@ -1,12 +1,17 @@
 .countdown-container {
+  animation-name: countdownTimer;
+  animation-duration: 2s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   left: 50%;
   transform: translate(-50%, 0);
   top: 42%;
+  opacity: 0;
   position: absolute;
-  font-family: 'Josefin Sans';
+  font-family: 'jalla On';
   font-size: 6em;
   text-align: center;
   letter-spacing: 0.1em;
@@ -210,5 +215,10 @@
       0 -2px 32px 0 rgba(255, 169, 22, 0.06)
       ;
   }
+}
 
+@keyframes countdownTimer {
+  to {
+    opacity: 1;
+  }
 }

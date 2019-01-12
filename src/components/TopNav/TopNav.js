@@ -6,47 +6,47 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import './TopNav.scss';
 
-class TopNav extends Component {
+export default class TopNav extends Component {
   render() {
     return(
       <nav className="top-nav">
         <ul>
           <li>
-            <Link to="#" className="fadeup" style={{ animationDelay: '.2s' }}>HOME</Link>
+            <Link to="#" className="fadeup" style={{ animationDelay: '2.2s' }}>HOME</Link>
           </li>
           <li>
-            <Link to="#" className="fadeup" style={{ animationDelay: '.4s' }}>SITE</Link>
+            <Link to="#" className="fadeup" style={{ animationDelay: '2.4s' }}>SITE</Link>
           </li>
           <li>
-            <Link to="#" className="fadeup" style={{ animationDelay: '.6s' }}>ORDER</Link>
+            <Link to="#" className="fadeup" style={{ animationDelay: '2.6s' }}>ORDER</Link>
           </li>
           <li>
-            <Link to="#" className="fadeup" style={{ animationDelay: '.8s' }}>GAME</Link>
+            <Link to="#" className="fadeup" style={{ animationDelay: '2.8s' }}>GAME</Link>
           </li>
           <li>
             <Link to="#">
               <img
                 className="top-nav-logo fadeup"
                 src="https://www.khwiki.com/images/thumb/3/3a/Kingdom_Hearts_Series_Logo.png/350px-Kingdom_Hearts_Series_Logo.png"
-                 style={{ animationDelay: '1s' }}
+                 style={{ animationDelay: '3s' }}
                  alt="Kingdom Hearts Logo"
               />
             </Link>
           </li>
-          <li className="top-nav-date fadeup" style={{ animationDelay: '1.2s' }}>
-            10 <sub>/ 2</sub>
+          <li className="top-nav-date fadeup" style={{ animationDelay: '3.2s' }}>
+            1 <sub>/ 29</sub>
           </li>
           <li>
           <span className="spinnerBackground">
             <Link to="#" className="top-nav-icons spin circle">
-                <SearchIcon className="spinnerIcon" style={{ animationDelay: '3.2s' }} />
+                <SearchIcon className="spinnerIcon" style={{ animationDelay: '5.2s' }} />
             </Link>
             </span>
           </li>
           <li>
           <span className="spinnerBackground">
             <Link to="#" className="top-nav-icons spin circle">
-                <MenuIcon className="spinnerIcon" style={{ animationDelay: '3.5s' }} />
+                <MenuIcon className="spinnerIcon" style={{ animationDelay: '5.4s' }} />
             </Link>
             </span>
           </li>
@@ -55,15 +55,3 @@ class TopNav extends Component {
     );
   }
 }
-
-export default TopNav;
-
-// (res => {
-//   const chartData = {...this.state.chartData};
-//   newChartData.datasets.label = towns;
-//   newChartData.datasets.data = population;
-//   this.setState({
-//     ...this.state,
-//     chartData
-//   });
-// })
