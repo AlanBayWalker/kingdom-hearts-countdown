@@ -1,3 +1,15 @@
+@keyframes fadeup {
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
 @keyframes spinBefore {
   10% {
     // border: 2px solid transparent; // Makes border thinner at the edges? I forgot what I was doing
@@ -137,16 +149,18 @@
   &::before {
     border: 2px solid transparent; // We're animating border-color again
     animation-name: spinBefore;
-    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in;
   }
 
   &::after {
     animation-name: spinAfter;
-    animation-duration: .9s;
+    animation-delay: 2s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     border: 0 solid transparent; // Makes border thinner at the edges? I forgot what I was doing
   }
 
@@ -202,9 +216,9 @@
   &::before {
     // background-color: #fff;
     animation-name: spinnerBackground;
-    animation-duration: 1.5s;
-    animation-delay: .8s;
-    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+    animation-delay: 2.8s;
+    // animation-timing-function: ;
     animation-fill-mode: forwards;
 
     // position: absolute;
@@ -231,12 +245,22 @@
   color: #000 !important;
   // margin-bottom: -.3rem;
   position: absolute;
-  top: 1.1rem;
+  top: 4rem;
   left: 1.2rem;
 
   animation-name: spinnerIcon;
-  animation-duration: .6s;
-  animation-delay: .8s;
+  animation-duration: .4s;
+  // animation-delay: 3.2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+}
+
+.fadeup {
+  animation-name: fadeup;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+  bottom: -2rem;
 }

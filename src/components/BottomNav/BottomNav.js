@@ -8,7 +8,7 @@ export default class BottomNav extends Component {
         <div className="bottom-nav-side-note">
           <p>
             <span className="bottom-nav-color-block"></span>
-            Kill it
+            <span className="bottom-nav-color-block-text">Kill it</span>
           </p>
           <h2 className="signed-title"> Built <span className="bottom-nav-highlight">with hate</span> by a fucking prodigy</h2>
           <p>in 2019</p>
