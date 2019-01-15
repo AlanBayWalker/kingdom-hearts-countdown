@@ -73,3 +73,7 @@ const particleParams = {
     }
   }
 };
+// would you ever want to use a normal setState over a callback setState?
+// When would you use constructor and super to set state over doing just state in a class?
+// can you destructure someting in a function parameter?
+// vender bundling

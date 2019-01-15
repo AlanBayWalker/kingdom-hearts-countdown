@@ -12,7 +12,7 @@ export const AppWrapper = styled.div`
 `;
 
 export const CustomParticles = styled(Particles)`
-  height: 99vh;
+  height: 100vh;
   position: absolute;
   top: -2rem;
   width: 100vw;

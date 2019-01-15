@@ -37,7 +37,7 @@ const imageScan = keyframes`
 
   90% {
     background: rgba(white, 0) no-repeat center center;
-    width: 298px;
+    width: 270px;
   }
 `;
 
@@ -74,11 +74,13 @@ export const ColorBlockText = styled.span`
   animation-delay: 5.6s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+  color: rgba(255, 255, 255, .8);
   opacity: 0;
+  margin-bottom: 5rem;
 `;
 
 export const SignedTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   text-transform: uppercase;
 `;
@@ -94,16 +96,16 @@ export const GameWrapper = styled.div`
   animation-fill-mode: forwards;
   right: -20rem;
   margin-left: auto;
-  height: 170px;
+  height: 150px;
   position: relative;
-  width: 300px;
+  width: 270px;
 `;
 
 export const GameIMG = styled.div`
   background: #fff url('https://assets1.ignimgs.com/2018/09/18/untitled-1-1537271499930_1280w.jpg') no-repeat center center;
   background-size: cover;
-  height: 170px;
-  width: 300px;
+  height: 150px;
+  width: 270px;
 `;
 
 export const GameScan = styled.div`
@@ -115,7 +117,7 @@ export const GameScan = styled.div`
   background: rgba(255, 255, 255, .3) no-repeat center center;
   background-size: cover;
   border-right: 2px solid rgba(255, 255, 255, .6);
-  height: 170px;
+  height: 150px;
   position: absolute;
   top: 0;
   width: 0px;
@@ -124,6 +126,7 @@ export const GameScan = styled.div`
 
 export const GameTitle = styled.p`
   background-color: rgba(0, 0, 0, .4);
+  font-size: .6rem;
   color: rgba(255, 255, 255, .7);
   left: -.5rem;
   margin: .5rem;

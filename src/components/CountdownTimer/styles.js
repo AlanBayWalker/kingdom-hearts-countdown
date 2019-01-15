@@ -71,12 +71,12 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   left: 50%;
-  transform: translate(-50%, 0);
-  top: 42%;
+  transform: translate(-50%, -50%);
+  top: 50%;
   opacity: 0;
   position: absolute;
   font-family: 'Josefin Slab', serif;
-  font-size: 6em;
+  font-size: 5em;
   text-align: center;
   letter-spacing: 0.1em;
   width: 80%;
@@ -91,8 +91,8 @@ export const Tube = styled.span`
   position: relative;
   display: inline-block;
   text-align: center;
-  width: 95px;
-  height: 130px;
+  width: 80px;
+  height: 110px;
   margin: 6px;
   border-top: 2px solid rgba(240, 200, 200, 0.12);
   border-left: 2px solid rgba(240, 200, 200, 0.1);
@@ -135,7 +135,7 @@ export const Digit = styled.span`
   position: absolute;
   width: 170px;
   line-height: 1.65em;
-  left: -2.1rem;
+  left: -2.6rem;
   text-shadow:
     rgba(50, 50, 50, 0.05) 0 0 1px,
     ;
@@ -159,19 +159,9 @@ export const Active = styled(Digit)`
   -webkit-text-stroke-color: #ef9700;
 `;
 
-export const AltDigit = styled.span`
-  position: absolute;
-  width: 170px;
-  line-height: 1.65em;
-  left: -2.1rem;
-  text-shadow:
-    rgba(50, 50, 50, 0.05) 0 0 1px,
-    ;
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgba(40, 40, 40, 0.15);
-
+export const AltDigit = styled(Digit)`
   color: #ccffff;
+  font-size: 4.5rem;
   opacity: 1;
   text-shadow:
     cyan 0 0 112px,
@@ -181,6 +171,7 @@ export const AltDigit = styled.span`
     #ffff 0 0 16px,
     #ffff 0 0 4px,
     ;
+    top: .5rem;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #ccffff;
 `;
