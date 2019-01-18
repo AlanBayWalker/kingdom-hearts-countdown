@@ -22,13 +22,13 @@ const bottomNav = () => (
         </ColorBlockText>
       </p>
       <SignedTitle className="fadeup" style={{ lineHeight: '0', animationDelay: '6.2s' }}>
-        {' Built '}
+        {' Designed & Built '}
         <SideNoteHighlight>
-          with hate
+          with love
         </SideNoteHighlight>
       </SignedTitle>
       <SignedTitle className="fadeup" style={{ animationDelay: '6.4s' }}>
-        by a fucking prodigy
+        by Alan Ayala
       </SignedTitle>
       <p className="fadeup" style={{ animationDelay: '6.6s', color: 'rgba(255, 255, 255, .8)' }}>
         in 2019
